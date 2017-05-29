@@ -1,0 +1,142 @@
+om sai ram
+
+
+Browsers intercept elements in two ways
+1. block level elements : has dimension- can be manipulated
+	ex: <body>, <div>, <section>, article, header, footer
+2. inline level elements: doesnt have dimensions - takes dimensions from child elements
+	ex: span, a, image
+
+In html5 a new concept of trinity was intoduced
+trinity says every element  should be a child of article
+<body>	
+	<article>
+		<header>
+			<nav> 
+		</header>
+		<section></section>
+		<footer></footer>
+	<article>
+</body>
+
+there are two ways of having lists in html
+1. unordered list
+2. ordered list
+
+the elements <ul> and <ol> can have only one child and it is <li>
+
+** semantic html
+semantic html element is way of describing its meaning to both browser and developer
+ex: form, table, article
+
+** Quirks mode
+
+is the understanding of the browser and interpreting elements and rendering garbage
+
+**Attribute::
+An attribute in html describes its charecteristics. 
+
+There are several attributes available but few are standard for all elements
+1. id - describes the uniqueness of the element
+2. class- this shares the common charecteristics or values between elements
+
+syntax:: <attribute name> = "<value>"
+ex: <header id = "header"></header> 
+
+There are two main components by which html  gets rendered  in browser
+1. tag- a tag is has closing tag name ex: <header></header>
+2. element - a element in html are fields which accept some sort of input. They dont have a closing field.
+
+- every element has a required attribute which needs to be added all time.
+
+- every input field should have "id" and "name" attributes
+
+user will be able to see anything in the body tag
+
+
+- Head
+
+head holds the metadata
+-A metadata is nothing but data inside data
+body is the rendering part of the html 
+
+-link: link tag is used to link externalsource
+this is used only for css and image file soucess
+
+
+ - <iframe> 
+An inline frame or iframe is used to embed another document within the current HTML document.
+
+
+CSS
+<!-- -----------------CSS---------------- -->
+
+
+*** there are three ways you can write a css
+1. attribute, inline  - first priority
+2. internal	- second priority
+3. external - third priority
+
+-- border
+the convention is 
+border: <dimensions><style><color>;
+
+** a block level element can have inline element as child but inline element cannot have block level element as a child or stylesheet will break
+
+--display
+	display is used to determine the nature of the element
+	there are several ways to display an element
+	1. inline 
+	2. block
+	3. inline - block
+	4. table
+	5. flex
+	6. none
+
+
+-- we can capture the attributes of html in our css file to apply styles to that particular element
+--caturing via id
+
+in css to capture an id, we use # as suffix
+
+capturing other attributes
+<element/tag>[attribute = "attribute name"]
+
+-- ids can be targeted using # in css
+
+-- id is always unique to entire project
+
+**class
+
+-- class attribute is used to share value with more than one element
+
+-- Box model in css
+	it creates a virtual "rectangular box" around the element which can be manipulated
+	margin : top, right, bottom, left
+	margin : 30px, 20px, 10px, 40px 
+	similarly padding
+	boder radius also follows same prnciples
+-- margins can have negative values, padding cannot have negative values
+
+
+-- width: inherit in css will inherit the size of the immediate parent
+
+
+*** -- inheriting the style from immediate parent is called as document flow
+
+*** -- In css we have certainstyles to break off from the document flow(parent-child flow)
+
+	1. float - it breaks off from the document flow and puts the element in the left or right. it doesnot support vertical breakoff's
+	2. position - it breaks off from the document flow but maintains its own document flow. 
+	there are several oprtions for position
+		i. relative - this is equivalent to saying no position is needed
+		ii. fixed - this fixes the element position regardless of the document flow
+		iii. absolute - this breaks off from the document flow and can be placed both vertically and horizontally using 
+		a. top 
+		b. bottom 
+		c. left	 
+		d. right
+
+-- different ways of selecting element is
+	1. <parent> <child>
+	2. nth child
